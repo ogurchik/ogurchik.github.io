@@ -63,9 +63,42 @@ body {
 
 .psevdo-li {
   display: flex;
+  position: relative;
   align-items: center;
   list-style-type: none;
   margin-left: 9.1954%; }
+
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 100px;
+  top: 23px;
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+
+.dropdown ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0; }
+
+.dropdown ul li:hover {
+  background: #75eac9; }
+
+.psevdo-li:hover .dropdown {
+  display: block; }
+
+.psevdo-li__inner-img {
+  margin-left: 5px;
+  transform: rotate(-90deg); }
+
+.psevdo-li:hover .psevdo-li__inner-img {
+  transform: rotate(0deg); }
 
 .psevdo-li:first-child {
   margin-left: 0; }
@@ -113,8 +146,10 @@ body {
   align-items: center;
   height: 400px;
   width: 100%;
-  border: 1px solid blue;
   overflow: hidden; }
+
+.wrap {
+  margin-bottom: 50px; }
 
 .slider {
   display: flex;
@@ -136,15 +171,63 @@ body {
   z-index: 1000; }
 
 .gut-slider {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(images/girl-in-short.png);
   background-repeat: no-repeat;
-  background-position: 90% 90%; }
+  background-position: 90% 90%;
+  background-color: #ede6de; }
+
+.second-banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/second-banner.jpg);
+  background-repeat: no-repeat;
+  background-color: #ede6de;
+  background-size: cover; }
 
 .gut-slider div {
-  display: inline-block; }
+  flex-direction: column;
+  padding-top: 50px; }
+
+.slider-banner {
+  /* huge proble with slick-slider , there i can't do display flex, thus i apply nesting too many div */
+  display: flex;
+  flex-direction: column;
+  width: 33.33333%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  margin-bottom: 30px; }
+
+.link-in-slider {
+  width: 44.1989%;
+  font-size: 0.88889em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fd926d;
+  border: none;
+  color: white;
+  box-shadow: 0 4px 2px -2px gray;
+  text-align: center;
+  text-decoration: none;
+  overflow: visible; }
+
+.small-left-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid white; }
+
+.slick-dots {
+  margin-top: 50px; }
 
 .rotate {
   transform: rotate(180deg); }
@@ -183,6 +266,9 @@ body {
 .arrow-switch-right {
   transform: scale(1.5, 1.5); }
 
+.oregon {
+  width: 100%; }
+
 .first-slider {
   display: flex;
   height: 100%;
@@ -201,7 +287,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 75px; }
+  height: 75px;
+  z-index: 9000; }
+
+.slick-dots {
+  top: 350px; }
 
 .score-switch__item {
   height: 10px;
@@ -502,8 +592,7 @@ body {
   align-items: center;
   width: 130%;
   height: 100%;
-  left: -15%;
-  border: 1px solid blue; }
+  left: -15%; }
 
 /***************** END model gallery ******************************/
 .photomodel-item__photo img {
@@ -565,7 +654,8 @@ body {
   position: relative;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  text-decoration: none; }
 
 .price__name-item, .price__backs, .add-to-cart {
   font-size: 0.66667em; }
@@ -582,7 +672,8 @@ body {
   padding-bottom: 7px;
   width: 54.05405%;
   box-shadow: 0 -4px 1px rgba(0, 0, 0, 0.3) inset;
-  background: #fd926d url("images/white-cross.png") no-repeat scroll 85% 50%; }
+  background: #fd926d url("images/white-cross.png") no-repeat scroll 85% 50%;
+  text-decoration: none; }
 
 /*************************End slider ***************************/
 .sale {
@@ -623,7 +714,6 @@ body {
   bottom: -85%; }
 
 .central-node {
-  border: 1px solid blue;
   position: absolute;
   color: white;
   display: flex;

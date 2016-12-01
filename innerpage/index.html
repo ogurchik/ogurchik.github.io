@@ -13,41 +13,92 @@
 <body>
 	<div class="top-bar">
 		<div class="top-bar__telephon"> custom care: 888-23-4567</div>
-		<div class="top-bar__choose-valuta"> $ us <img src="images/arrow.png" alt=""> </div>
+        <select class="top-bar__choose-valuta">
+            <option> $ us <img src="images/arrow.png" alt=""> </option>
+            <option> &euro; eu <img src="images/arrow.png" alt=""> </option>
+            <option> &pound; fs <img src="images/arrow.png" alt=""> </option>
+        </select>
 		<div class="top-bar__account"> <img src="images/user-account.png" alt="">    my account</div>
 		<div class="top-bar__search"> <img src="images/magnifier.png" alt=""></div>
 
 	</div>	
 	<div class="top-menu">
-		<div class="logo"><img src="images/logo.png" alt=""></div> <div class="list-menu"> <div class="psevdo-li">new <img src="images/black-arrow.png" alt=""></div class="psevdo-li">
-			<div class="psevdo-li">designers <img src="images/black-arrow.png" alt=""></div class="psevdo-li">
-			<div class="psevdo-li">women <img src="images/black-arrow.png" alt=""></div class="psevdo-li">
-			<div class="psevdo-li">men <img src="images/black-arrow.png" alt=""></div class="psevdo-li">
-			<div class="psevdo-li">clearence <img src="images/black-arrow.png" alt=""></div class="psevdo-li">
+        <div class="logo"><img src="images/logo.png" alt=""></div> <div class="list-menu"> 
+            <div class="psevdo-li">
+                    new 
+                    <img class="psevdo-li__inner-img" src="images/black-arrow.png" alt=""> 
+                    <div class="dropdown">
+                       <ul>
+                           <li>First</li>
+                           <li>Second</li>
+                           <li>Therty</li>
+                       </ul>
+                    </div>
+             </div>
+                <div class="psevdo-li">
+                    designers 
+                    <img  class="psevdo-li__inner-img" src="images/black-arrow.png" alt="">
+                    <div class="dropdown">
+                       <ul>
+                           <li>First</li>
+                           <li>Second</li>
+                           <li>Therty</li>
+                       </ul>
+                    </div>
+                </div class="psevdo-li">
+                <div class="psevdo-li">
+                    women 
+                    <img  class="psevdo-li__inner-img" src="images/black-arrow.png" alt="">
+                    <div class="dropdown">
+                       <ul>
+                           <li>First</li>
+                           <li>Second</li>
+                           <li>Therty</li>
+                       </ul>
+                    </div>
+                </div >
+                <div class="psevdo-li">
+                    men 
+                    <img  class="psevdo-li__inner-img" src="images/black-arrow.png" alt="">
+                    <div class="dropdown">
+                       <ul>
+                           <li>First</li>
+                           <li>Second</li>
+                           <li>Therty</li>
+                       </ul>
+                    </div>
+                </div >
+                <div class="psevdo-li">
+                    clearence 
+                    <img  class="psevdo-li__inner-img" src="images/black-arrow.png" alt="">
+                    <div class="dropdown">
+                       <ul>
+                           <li>First</li>
+                           <li>Second</li>
+                           <li>Therty</li>
+                       </ul>
+                    </div>
+                </div >
 		</div>
 	<div class="client-cart">
 		<div class="choose-cart">Your cart</div>
 		<div class="describe-cart">0 ITEMS | $0 </div>
 	</div>
 	</div>
-<div class="slider-wrap">
-    <div class="slide-left"><img src="images/big-arrow.png" alt="" class="rotate"></div>
-    <div class="slider">
-        <div class="gut-slider"><div><img class="gut-slider__img" src="images/crazy-summer-banner.png" alt=""></div>
-        </div>
-        <div>second</div>
-        <div>three</div>
-    </div>
-    <div class="slide-right"><img src="images/big-arrow.png" alt=""></div>
-</div>
-<div class="score-switch">
-	<div class="score-switch__item"> </div>
-	<div class="score-switch__item"></div>
-	<div class="score-switch__item"></div>
-	<div class="score-switch__item"></div>
-	<div class="score-switch__item"></div>
-	<div class="score-switch__item"></div>
-</div>
+	<div class="wrap">
+		<div class="slide-left"><img src="images/big-arrow.png" alt="" class="rotate"></div>
+		<div class="oregon">
+			<div class="gut-slider">
+					<div class="slider-banner">
+						<img class="gut-slider__img" src="images/crazy-summer-banner.png" alt="">
+						<a href="#"  class="link-in-slider"> SHOW NOW  <span class="small-left-arrow"></span></a>
+					</div>
+		        </div>
+			<div class="second-banner"><img src="images/second-banner.jpg" alt=""></div>
+			<div><img src="images/therty-banner.jpg" alt=""></div>
+		</div>
+		<div class="slide-right"><img src="images/big-arrow.png" alt=""></div>
+	</div>
 <div class="social-bar">
 	<div class="enter-email">
 		Stay update 
@@ -82,8 +133,7 @@
 				<div class="inner-white-sircle">
 					<p class="inner-white-sircle__summer">Summer</p>
 					<p class="inner-white-sircle__party">PARTY</p>
-					<p class="inner-white-sircle__collection">collection</p>
-				</div>
+					<p class="inner-white-sircle__collection">collection</p> </div>
 			</div>
 		</div>
 		<div class="left-side-showcase__wrapper-low-layer">
@@ -130,7 +180,7 @@
 			<div class="price">
 				<div class="price__name-item">petrol sweater</div>
 				<div class="price__backs">$21.50</div>
-				<div class="add-to-cart">add to cart</div>
+				<a href="#" class="add-to-cart">add to cart</a>
 			</div>
 		</div>
 		<div class="photomodel-item">
@@ -144,7 +194,7 @@
 			<div class="price">
 				<div class="price__name-item">petrol sweater</div>
 				<div class="price__backs">$21.50</div>
-				<div class="add-to-cart">add to cart</div>
+				<a href="#" class="add-to-cart">add to cart</a>
 			</div>
 		</div>
 		<div class="photomodel-item">
@@ -158,7 +208,7 @@
 			<div class="price">
 				<div class="price__name-item">petrol sweater</div>
 				<div class="price__backs">$21.50</div>
-				<div class="add-to-cart">add to cart</div>
+				<a href="#" class="add-to-cart">add to cart</a>
 			</div>
 		</div>
 		<div class="photomodel-item">
@@ -172,17 +222,21 @@
 			<div class="price">
 				<div class="price__name-item">petrol sweater</div>
 				<div class="price__backs">$21.50</div>
-				<div class="add-to-cart">add to cart</div>
+				<a href="#" class="add-to-cart">add to cart</a>
 			</div>
 		</div>
 		<div class="photomodel-item">
+			<div class="shop-it">
+				<p><img src="images/bag-shop.png" alt=""></p>
+				<p>shop it</p>
+			</div>
 			<div class="photomodel-item__photo">
 <img src="images/caplia.jpg" alt="">
 			</div>
-			<div class="price">
+			<div class="price" href="#">
 				<div class="price__name-item">petrol sweater</div>
 				<div class="price__backs">$21.50</div>
-				<div class="add-to-cart">add to cart</div>
+				<a href="#" class="add-to-cart">add to cart</a>
 			</div>
 		</div>
 		<div class="photomodel-item">
@@ -196,7 +250,7 @@
 			<div class="price">
 				<div class="price__name-item">petrol sweater</div>
 				<div class="price__backs">$21.50</div>
-				<div class="add-to-cart">add to cart</div>
+				<a href="#" class="add-to-cart">add to cart</a>
 			</div>
 		</div>
 	</div>
@@ -225,7 +279,7 @@
 		<div class="price color-for-block-price">
 			<div class="price__name-item color-for-block-price">petrol sweater</div>
 			<div class="price__backs color-for-block-price">$21.50</div>
-			<div class="add-to-cart">add to cart</div>
+				<a href="#" class="add-to-cart">add to cart</a>
 		</div>
 	</div>
 	<div class="photomodel-item">
@@ -234,7 +288,7 @@
 
 			<div class="price__name-item color-for-block-price">petrol sweater</div>
 			<div class="price__backs color-for-block-price">$21.50</div>
-			<div class="add-to-cart">add to cart</div>
+				<a href="#" class="add-to-cart">add to cart</a>
 		</div>
 	</div>
 	<div class="photomodel-item">
@@ -242,7 +296,7 @@
 		<div class="price color-for-block-price">
 			<div class="price__name-item color-for-block-price">petrol sweater</div>
 			<div class="price__backs color-for-block-price">$21.50</div>
-			<div class="add-to-cart">add to cart</div>
+				<a href="#" class="add-to-cart">add to cart</a>
 		</div>
 	</div>
 	<div class="photomodel-item">
@@ -250,7 +304,7 @@
 		<div class="price color-for-block-price">
 			<div class="price__name-item color-for-block-price ">petrol sweater</div>
 			<div class="price__backs color-for-block-price">$21.50</div>
-			<div class="add-to-cart">add to cart</div>
+				<a href="#" class="add-to-cart">add to cart</a>
 		</div>
 	</div>
 </div>
@@ -387,8 +441,29 @@ $(document).ready(function() {
     $('.slider').slick({
 			prevArrow: $('.slide-left'),
 			nextArrow: $('.slide-right'),
+            dots: true
     })
 })
+$(document).ready(function() {
+    $('.oregon').slick({
+			prevArrow: $('.slide-left'),
+			nextArrow: $('.slide-right'),
+            dots: true
+    })
+})
+console.log('govno');
+    console.log("jeka");
+    var leftTumbler = document.querySelector('.model-gallery-control-block__shunt-left');
+    var rightTumbler = document.querySelector('.model-gallery-control-block__shunt-right');
+    rightTumbler.onclick = function() {
+        console.log("hoho");
+        rightTumbler.style.backgroundColor = '#fd926d';
+        leftTumbler.style.backgroundColor ='#f2f2f2'
+    }
+    leftTumbler.onclick = function() {
+        leftTumbler.style.backgroundColor = '#fd926d';
+        rightTumbler.style.backgroundColor ='#f2f2f2'
+    }
 </script>
 </body>
 </html>
