@@ -14,11 +14,35 @@ body {
   color: white;
   font-size: 0.6666666em; }
 
+/*  experement */
+.experement {
+  display: flex;
+  width: 100%;
+  border: 1px solid blue;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.one {
+  width: 33%;
+  border: 1px solid black; }
+
+.two {
+  width: 33%;
+  border: 1px solid black; }
+
+.three {
+  width: 33%;
+  border: 1px solid black;
+  flex-grow: 1; }
+
+/* end experement */
 .top-bar__telephon {
-  margin-left: 9.58333%; }
+  margin-left: 9.58333%;
+  width: 50%; }
 
 .top-bar__choose-valuta {
   display: flex;
+  position: relative;
   align-items: center;
   border-left: 1px solid white;
   margin-left: 47.91667%;
@@ -48,8 +72,7 @@ body {
 /********************top-menu *****************************/
 .top-menu {
   display: flex;
-  align-items: center;
-  height: 105px; }
+  align-items: center; }
 
 .list-menu {
   display: inline-flex;
@@ -849,5 +872,39 @@ footer lh {
   align-items: baseline; }
 
 /************** end footer **************/
+@media (max-width: 1000px) {
+  .top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .top-bar__choose-valuta {
+    border: 1px solid white;
+    margin-left: 10%;
+    width: 10%; }
+
+  .top-bar__telephon {
+    margin-left: 3.33333%;
+    border: 1px solid white; }
+
+  .logo {
+    width: 30%; }
+
+  .client-cart {
+    width: 49%;
+    order: 2;
+    margin-bottom: 20px; }
+
+  .list-menu {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-around;
+    order: 3;
+    flex: 1 0; }
+
+  .social-button {
+    margin-left: 20%; } }
 
 /*# sourceMappingURL=style.css.map */
